@@ -3,14 +3,15 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
 .wrapper {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
+
 .wrapper__todo {
 }
 
@@ -18,6 +19,7 @@ body {
   background-color: #fff;
   margin-top: 30px;
   width: 60%;
+  padding-bottom: 45px;
 }
 
 .todo__content {
@@ -31,7 +33,6 @@ body {
 
 .todo__field {
   display: flex;
-
   max-width: 80%;
   margin: 0 auto;
   /* border: 1px black solid; */
@@ -42,7 +43,6 @@ body {
   border: 1px rgb(112, 109, 22) solid;
   padding: 10px;
   width: 100%;
-
   transition: box-shadow 0.3s linear;
 }
 
@@ -52,13 +52,14 @@ body {
   box-shadow: 0px 0px 6px 10px rgba(71, 70, 25, 0.28);
 }
 
-.todo__field_text:focus, .todo__field_text:active  {
+.todo__field_text:focus,
+.todo__field_text:active {
   outline: none;
-
   -webkit-box-shadow: 0px 0px 10px 3px rgb(24, 136, 170);
   -moz-box-shadow: 0px 0px 10px 3px rgb(24, 136, 170);
   box-shadow: 0px 0px 10px 3px rgb(24, 136, 170);
 }
+
 .todo__field_enter {
   padding: 5px;
   margin-left: 5px;
@@ -75,26 +76,44 @@ body {
 
 .todo__field_enter:hover {
   cursor: pointer;
-
   -webkit-box-shadow: 0px 0px 10px 3px rgb(24, 136, 170);
   -moz-box-shadow: 0px 0px 10px 3px rgb(24, 136, 170);
   box-shadow: 0px 0px 10px 3px rgb(24, 136, 170);
 }
 
 .todo__record {
+  margin-top: 30px;
 }
 
 .todo__record_item {
-}
+  margin: 10px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: rgb(29 111 106 / 99%);
+  box-shadow: 0px 0px 10px 3px rgb(24, 136, 170);
 
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+}
+.todo__record_right {
+  margin-left: auto;
+  display: flex;
+}
 .todo__record_checkbox {
 }
 
 .todo__record_record {
+  padding: 0 10px;
 }
 
 .todo__record_change {
+  cursor: pointer;
+  margin-right: 20px;
 }
 
 .todo__record_del {
+  cursor: pointer;
+  margin-right: 15px;
 }
